@@ -2,7 +2,7 @@
 # 启动 compose stack 
 docker-compose up
 
-# 批量修改密码的三个命令（需要分别执行）
+# 批量修改密码的三个命令（需要分别执行），这三个命令会批量刷新密码，生成大量的随机密码
 docker-compose exec elasticsearch bin/elasticsearch-reset-password --batch --user elastic
 docker-compose exec elasticsearch bin/elasticsearch-reset-password --batch --user logstash_internal
 docker-compose exec elasticsearch bin/elasticsearch-reset-password --batch --user kibana_system
