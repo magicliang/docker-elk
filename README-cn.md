@@ -1,3 +1,5 @@
+Docker 是容器技术的核心、基础，Docker Compose 是一个基于Docker的单主机容器编排工具，而 k8s 是一个跨主机的集群部署工具。
+
 ```bash
 # 启动 compose stack 
 docker-compose up
