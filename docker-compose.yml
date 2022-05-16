@@ -43,7 +43,8 @@ services:
       ELASTIC_PASSWORD: ${ELASTIC_PASSWORD:-}
       # Use single node discovery in order to disable production mode and avoid bootstrap checks.
       # see: https://www.elastic.co/guide/en/elasticsearch/reference/current/bootstrap-checks.html
-      discovery.type: single-node
+      # 快速启动使用 single-node，能够支持组成集群则使用 
+      discovery.type: multi-node
     networks:
       - elk
 
